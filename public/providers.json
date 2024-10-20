@@ -4,359 +4,293 @@
     "name": "Adv. Arjun Mehta",
     "profession": "Advocate",
     "specialization": "Criminal Law",
-    "photo": "https://example.com/photos/arjun_mehta.jpg",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
     "description": "Experienced criminal defense lawyer with over 15 years of practice.",
     "hourlyRate": 1500,
     "ratings": 4.8,
-    "reviews": 120,
-    "location": "Mumbai, Maharashtra"
+    "reviews": [
+      { "user": "Amit Joshi", "review": "Exceptional service and attention to detail!" },
+      { "user": "Neha Sharma", "review": "Helped me win my case against all odds." }
+    ]
   },
   {
     "id": 2,
     "name": "Adv. Shreya Patel",
     "profession": "Advocate",
     "specialization": "Family Law",
-    "photo": "https://example.com/photos/shreya_patel.jpg",
-    "description": "Specialist in divorce and child custody cases.",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Specialist in divorce and child custody cases with 10 years of experience.",
     "hourlyRate": 2000,
     "ratings": 4.5,
-    "reviews": 95,
-    "location": "Delhi"
+    "reviews": [
+      { "user": "Rahul Verma", "review": "Incredible support throughout my divorce process." },
+      { "user": "Priya Reddy", "review": "Knowledgeable and compassionate lawyer!" }
+    ]
   },
   {
     "id": 3,
     "name": "Mr. Raghav Singh",
     "profession": "Arbitrator",
-    "specialization": "Commercial Arbitration",
-    "photo": "https://example.com/photos/raghav_singh.jpg",
-    "description": "Expert in resolving business disputes through arbitration.",
+    "specialization": "Corporate Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Expert in resolving business disputes through arbitration with over 12 years of practice.",
     "hourlyRate": 3000,
     "ratings": 4.9,
-    "reviews": 75,
-    "location": "Bengaluru, Karnataka"
+    "reviews": [
+      { "user": "Simran Gupta", "review": "A true expert in his field; highly recommend!" },
+      { "user": "Vikram Singh", "review": "Efficient and effective arbitration process!" }
+    ]
   },
   {
     "id": 4,
     "name": "Adv. Priya Kapoor",
     "profession": "Advocate",
-    "specialization": "Corporate Law",
-    "photo": "https://example.com/photos/priya_kapoor.jpg",
-    "description": "Corporate lawyer with a focus on mergers and acquisitions.",
+    "specialization": "Tax Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Corporate lawyer with a focus on mergers and acquisitions, possessing 8 years of experience.",
     "hourlyRate": 2500,
     "ratings": 4.7,
-    "reviews": 110,
-    "location": "Chennai, Tamil Nadu"
+    "reviews": [
+      { "user": "Aarav Malhotra", "review": "Handled my corporate tax issues efficiently!" },
+      { "user": "Sonia Das", "review": "Professional and very knowledgeable." }
+    ]
   },
   {
     "id": 5,
     "name": "Ms. Anjali Verma",
-    "profession": "Mediatior",
-    "specialization": "Workplace Mediation",
-    "photo": "https://example.com/photos/anjali_verma.jpg",
-    "description": "Workplace conflict resolution and mediation expert.",
+    "profession": "Mediator",
+    "specialization": "Criminal Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Workplace conflict resolution and mediation expert with 9 years of experience.",
     "hourlyRate": 1800,
     "ratings": 4.6,
-    "reviews": 68,
-    "location": "Pune, Maharashtra"
+    "reviews": [
+      { "user": "Karan Yadav", "review": "Facilitated an excellent resolution!" },
+      { "user": "Sneha Rao", "review": "Very professional and understanding." }
+    ]
   },
   {
     "id": 6,
     "name": "Adv. Rajat Chauhan",
     "profession": "Advocate",
-    "specialization": "Real Estate Law",
-    "photo": "https://example.com/photos/rajat_chauhan.jpg",
-    "description": "Specialized in property disputes and real estate transactions.",
+    "specialization": "Family Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Specialized in property disputes and real estate transactions with 11 years of experience.",
     "hourlyRate": 2200,
     "ratings": 4.8,
-    "reviews": 130,
-    "location": "Hyderabad, Telangana"
+    "reviews": [
+      { "user": "Anita Sharma", "review": "Expert guidance on property issues." },
+      { "user": "Rohan Malhotra", "review": "Great communicator and very helpful!" }
+    ]
   },
   {
     "id": 7,
     "name": "Mr. Vivek Sinha",
     "profession": "Notary",
-    "specialization": "Document Verification",
-    "photo": "https://example.com/photos/vivek_sinha.jpg",
-    "description": "Professional notary for official document verification.",
+    "specialization": "Tax Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Professional notary for official document verification with 6 years of experience.",
     "hourlyRate": 1000,
     "ratings": 4.4,
-    "reviews": 45,
-    "location": "Kolkata, West Bengal"
+    "reviews": [
+      { "user": "Riya Singh", "review": "Quick and efficient notary services!" },
+      { "user": "Amit Bansal", "review": "Reliable and trustworthy!" }
+    ]
   },
   {
     "id": 8,
     "name": "Adv. Komal Desai",
     "profession": "Advocate",
-    "specialization": "Intellectual Property Law",
-    "photo": "https://example.com/photos/komal_desai.jpg",
-    "description": "Expert in IP law, including copyright and trademark issues.",
+    "specialization": "Corporate Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Expert in IP law, including copyright and trademark issues with 13 years of experience.",
     "hourlyRate": 2700,
     "ratings": 4.9,
-    "reviews": 85,
-    "location": "Mumbai, Maharashtra"
+    "reviews": [
+      { "user": "Tanvi Mehta", "review": "Outstanding expertise in intellectual property!" },
+      { "user": "Rajesh Kumar", "review": "Helped me protect my business assets." }
+    ]
   },
   {
     "id": 9,
     "name": "Mr. Deepak Kulkarni",
     "profession": "Arbitrator",
-    "specialization": "Civil Disputes",
-    "photo": "https://example.com/photos/deepak_kulkarni.jpg",
-    "description": "Civil disputes resolution through arbitration.",
+    "specialization": "Criminal Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Civil disputes resolution through arbitration with 7 years of experience.",
     "hourlyRate": 2400,
     "ratings": 4.6,
-    "reviews": 92,
-    "location": "Delhi"
+    "reviews": [
+      { "user": "Kriti Sharma", "review": "Very knowledgeable and fair!" },
+      { "user": "Sandeep Joshi", "review": "A great help during the arbitration process." }
+    ]
   },
   {
     "id": 10,
     "name": "Adv. Reema Nair",
     "profession": "Advocate",
-    "specialization": "Environmental Law",
-    "photo": "https://example.com/photos/reema_nair.jpg",
-    "description": "Environmental law advocate with a focus on sustainable practices.",
+    "specialization": "Tax Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Environmental law advocate with a focus on sustainable practices, boasting 5 years of experience.",
     "hourlyRate": 2300,
     "ratings": 4.7,
-    "reviews": 50,
-    "location": "Bengaluru, Karnataka"
+    "reviews": [
+      { "user": "Vinay Choudhury", "review": "Great advocate for environmental cases!" },
+      { "user": "Preeti Roy", "review": "Incredible knowledge in tax laws!" }
+    ]
   },
   {
     "id": 11,
     "name": "Mr. Neeraj Sharma",
     "profession": "Document Writer",
-    "specialization": "Contract Drafting",
-    "photo": "https://example.com/photos/neeraj_sharma.jpg",
-    "description": "Specialized in drafting legal documents and contracts.",
+    "specialization": "Corporate Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Specialized in drafting legal documents and contracts with over 8 years of experience.",
     "hourlyRate": 1300,
     "ratings": 4.3,
-    "reviews": 55,
-    "location": "Ahmedabad, Gujarat"
+    "reviews": [
+      { "user": "Vikas Yadav", "review": "Drafted excellent contracts for my business!" },
+      { "user": "Anjali Mehta", "review": "Very detail-oriented and professional." }
+    ]
   },
   {
     "id": 12,
     "name": "Adv. Neha Pandey",
     "profession": "Advocate",
-    "specialization": "Tax Law",
-    "photo": "https://example.com/photos/neha_pandey.jpg",
-    "description": "Tax lawyer with expertise in corporate tax disputes.",
+    "specialization": "Family Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Tax lawyer with expertise in corporate tax disputes and 9 years of experience.",
     "hourlyRate": 2500,
     "ratings": 4.8,
-    "reviews": 60,
-    "location": "Delhi"
+    "reviews": [
+      { "user": "Ritika Sinha", "review": "Extremely helpful in understanding tax implications!" },
+      { "user": "Karan Kumar", "review": "Knowledgeable and approachable!" }
+    ]
   },
   {
     "id": 13,
     "name": "Adv. Manish Gupta",
     "profession": "Advocate",
-    "specialization": "Employment Law",
-    "photo": "https://example.com/photos/manish_gupta.jpg",
-    "description": "Specialist in labor disputes and employment regulations.",
+    "specialization": "Criminal Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Specialist in labor disputes and employment regulations with over 14 years of experience.",
     "hourlyRate": 2100,
     "ratings": 4.5,
-    "reviews": 48,
-    "location": "Jaipur, Rajasthan"
+    "reviews": [
+      { "user": "Nisha Jain", "review": "Exceptional knowledge in labor law!" },
+      { "user": "Arvind Joshi", "review": "Very supportive during my case." }
+    ]
   },
   {
     "id": 14,
-    "name": "Ms. Pooja Sen",
-    "profession": "Mediatior",
-    "specialization": "Family Mediation",
-    "photo": "https://example.com/photos/pooja_sen.jpg",
-    "description": "Family and divorce mediation specialist.",
-    "hourlyRate": 1900,
+    "name": "Adv. Priyanka Singh",
+    "profession": "Advocate",
+    "specialization": "Tax Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Experienced in tax litigation and compliance, with 11 years of experience.",
+    "hourlyRate": 2200,
     "ratings": 4.4,
-    "reviews": 40,
-    "location": "Lucknow, Uttar Pradesh"
+    "reviews": [
+      { "user": "Meera Gupta", "review": "Always up-to-date on tax laws!" },
+      { "user": "Ravi Kumar", "review": "Very professional and thorough!" }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Mr. Ashish Roy",
+    "profession": "Mediator",
+    "specialization": "Corporate Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Corporate mediator specializing in business partnerships with over 10 years of experience.",
+    "hourlyRate": 2800,
+    "ratings": 4.7,
+    "reviews": [
+      { "user": "Sahil Bansal", "review": "Excellent mediator; resolved issues quickly!" },
+      { "user": "Nidhi Kapoor", "review": "Professional and fair throughout the process." }
+    ]
   },
   {
     "id": 15,
     "name": "Adv. Anil Kohli",
     "profession": "Advocate",
-    "specialization": "Banking Law",
-    "photo": "https://example.com/photos/anil_kohli.jpg",
-    "description": "Specialized in banking regulations and financial disputes.",
+    "specialization": "Corporate Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Specialized in banking regulations and financial disputes with over 12 years of experience.",
     "hourlyRate": 2600,
     "ratings": 4.8,
-    "reviews": 95,
-    "location": "Chandigarh"
+    "reviews": [
+      { "user": "Priya Menon", "review": "Exceptional service and legal advice!" },
+      { "user": "Rahul Verma", "review": "Very knowledgeable and professional!" }
+    ]
   },
   {
     "id": 16,
     "name": "Mr. Rajiv Ahuja",
     "profession": "Notary",
-    "specialization": "Official Notarization",
-    "photo": "https://example.com/photos/rajiv_ahuja.jpg",
-    "description": "Notary with over 20 years of experience.",
+    "specialization": "Criminal Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Notary with over 20 years of experience in document verification.",
     "hourlyRate": 1100,
     "ratings": 4.2,
-    "reviews": 25,
-    "location": "Bhopal, Madhya Pradesh"
+    "reviews": [
+      { "user": "Suman Nair", "review": "Prompt and reliable notary services!" },
+      { "user": "Asha Kumar", "review": "Highly recommend for document needs!" }
+    ]
   },
   {
     "id": 17,
     "name": "Adv. Meenakshi Rao",
     "profession": "Advocate",
-    "specialization": "Consumer Law",
-    "photo": "https://example.com/photos/meenakshi_rao.jpg",
-    "description": "Expert in consumer protection and product liability.",
+    "specialization": "Family Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Expert in consumer protection and product liability with over 8 years of experience.",
     "hourlyRate": 2000,
     "ratings": 4.7,
-    "reviews": 72,
-    "location": "Kochi, Kerala"
+    "reviews": [
+      { "user": "Vikram Joshi", "review": "Very helpful and knowledgeable!" },
+      { "user": "Deepa Agarwal", "review": "Handled my case with utmost care!" }
+    ]
   },
   {
     "id": 18,
     "name": "Adv. Sanjay Deshmukh",
     "profession": "Advocate",
-    "specialization": "Immigration Law",
-    "photo": "https://example.com/photos/sanjay_deshmukh.jpg",
-    "description": "Specialist in immigration and citizenship matters.",
+    "specialization": "Tax Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Specialist in immigration and citizenship matters with over 9 years of experience.",
     "hourlyRate": 2100,
     "ratings": 4.5,
-    "reviews": 33,
-    "location": "Pune, Maharashtra"
+    "reviews": [
+      { "user": "Kunal Patil", "review": "Very thorough and insightful!" },
+      { "user": "Nisha Reddy", "review": "Made the process easy and understandable!" }
+    ]
   },
   {
     "id": 19,
     "name": "Adv. Kavita Iyer",
     "profession": "Advocate",
-    "specialization": "Cyber Law",
-    "photo": "https://example.com/photos/kavita_iyer.jpg",
-    "description": "Expert in data protection and cyber crime laws.",
+    "specialization": "Corporate Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Expert in data protection and cyber crime laws with over 7 years of experience.",
     "hourlyRate": 2400,
     "ratings": 4.9,
-    "reviews": 67,
-    "location": "Mumbai, Maharashtra"
+    "reviews": [
+      { "user": "Aditya Sharma", "review": "Great advice on corporate matters!" },
+      { "user": "Simran Rao", "review": "Very professional and helpful!" }
+    ]
   },
   {
     "id": 20,
     "name": "Mr. Abhay Sethi",
     "profession": "Document Writer",
-    "specialization": "Legal Document Preparation",
-    "photo": "https://example.com/photos/abhay_sethi.jpg",
-    "description": "Preparation of various legal documents.",
+    "specialization": "Family Law",
+    "photo": "/src/assets/photos/{id}/p.jpeg",
+    "description": "Preparation of various legal documents with over 5 years of experience.",
     "hourlyRate": 1200,
     "ratings": 4.4,
-    "reviews": 22,
-    "location": "Noida, Uttar Pradesh"
-  },
-  {
-    "id": 21,
-    "name": "Adv. Richa Bansal",
-    "profession": "Advocate",
-    "specialization": "Civil Law",
-    "photo": "https://example.com/photos/richa_bansal.jpg",
-    "description": "Experienced civil litigation lawyer.",
-    "hourlyRate": 1900,
-    "ratings": 4.6,
-    "reviews": 50,
-    "location": "Surat, Gujarat"
-  },
-  {
-    "id": 22,
-    "name": "Ms. Tanya Khanna",
-    "profession": "Mediatior",
-    "specialization": "Community Mediation",
-    "photo": "https://example.com/photos/tanya_khanna.jpg",
-    "description": "Community mediation expert for local disputes.",
-    "hourlyRate": 1700,
-    "ratings": 4.3,
-    "reviews": 30,
-    "location": "Nashik, Maharashtra"
-  },
-  {
-    "id": 23,
-    "name": "Adv. Suresh Tyagi",
-    "profession": "Advocate",
-    "specialization": "Insurance Law",
-    "photo": "https://example.com/photos/suresh_tyagi.jpg",
-    "description": "Insurance claims and policy disputes lawyer.",
-    "hourlyRate": 2300,
-    "ratings": 4.8,
-    "reviews": 65,
-    "location": "Vadodara, Gujarat"
-  },
-  {
-    "id": 24,
-    "name": "Mr. Akshay Malhotra",
-    "profession": "Arbitrator",
-    "specialization": "International Arbitration",
-    "photo": "https://example.com/photos/akshay_malhotra.jpg",
-    "description": "Expert in international business disputes arbitration.",
-    "hourlyRate": 3500,
-    "ratings": 4.7,
-    "reviews": 80,
-    "location": "Delhi"
-  },
-  {
-    "id": 25,
-    "name": "Adv. Ritesh Rawat",
-    "profession": "Advocate",
-    "specialization": "Property Law",
-    "photo": "https://example.com/photos/ritesh_rawat.jpg",
-    "description": "Property transactions and dispute resolution expert.",
-    "hourlyRate": 2000,
-    "ratings": 4.5,
-    "reviews": 90,
-    "location": "Jaipur, Rajasthan"
-  },
-  {
-    "id": 26,
-    "name": "Ms. Nisha Yadav",
-    "profession": "Mediatior",
-    "specialization": "Commercial Mediation",
-    "photo": "https://example.com/photos/nisha_yadav.jpg",
-    "description": "Mediation services for business disputes.",
-    "hourlyRate": 1750,
-    "ratings": 4.6,
-    "reviews": 50,
-    "location": "Kolkata, West Bengal"
-  },
-  {
-    "id": 27,
-    "name": "Adv. Shubham Jha",
-    "profession": "Advocate",
-    "specialization": "Cyber Crime Law",
-    "photo": "https://example.com/photos/shubham_jha.jpg",
-    "description": "Lawyer specializing in cyber crimes and online fraud.",
-    "hourlyRate": 2200,
-    "ratings": 4.9,
-    "reviews": 30,
-    "location": "Bengaluru, Karnataka"
-  },
-  {
-    "id": 28,
-    "name": "Adv. Smita Bhattacharya",
-    "profession": "Advocate",
-    "specialization": "Human Rights Law",
-    "photo": "https://example.com/photos/smita_bhattacharya.jpg",
-    "description": "Defending human rights and social justice.",
-    "hourlyRate": 2400,
-    "ratings": 4.8,
-    "reviews": 40,
-    "location": "Mumbai, Maharashtra"
-  },
-  {
-    "id": 29,
-    "name": "Mr. Parth Jain",
-    "profession": "Notary",
-    "specialization": "Wills and Estates",
-    "photo": "https://example.com/photos/parth_jain.jpg",
-    "description": "Notary services for wills and estate planning.",
-    "hourlyRate": 1200,
-    "ratings": 4.4,
-    "reviews": 25,
-    "location": "Lucknow, Uttar Pradesh"
-  },
-  {
-    "id": 30,
-    "name": "Adv. Tarun Sharma",
-    "profession": "Advocate",
-    "specialization": "Taxation Law",
-    "photo": "https://example.com/photos/tarun_sharma.jpg",
-    "description": "Tax law expert focusing on individual and business tax matters.",
-    "hourlyRate": 2200,
-    "ratings": 4.7,
-    "reviews": 50,
-    "location": "Delhi"
+    "reviews": [
+      { "user": "Ritesh Mehta", "review": "Efficient and effective document services!" },
+      { "user": "Neha Singh", "review": "Very attentive to detail!" }
+    ]
   }
 ]
