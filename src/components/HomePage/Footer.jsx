@@ -1,16 +1,13 @@
-// src/pages/HomePage.jsx
+// src/components/HomePage/Footer.jsx
 
 // import React from 'react';
-import Footer from '../components/HomePage/Footer'; // Ensure the path is correct
 
-const HomePage = () => {
+const Footer = () => {
     return (
-        <div>
-            <h1>Welcome to LegalEase</h1>
-            {/* Other content */}
-            <Footer /> {/* Use the Footer component */}
-        </div>
+        <footer>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </footer>
     );
 };
 
-export default HomePage;
+export default Footer; // Ensure this line is present

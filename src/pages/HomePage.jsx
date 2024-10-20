@@ -8,11 +8,17 @@ import Testimonials from '../components/HomePage/Testimonials';
 import Footer from '../components/HomePage/Footer';
 
 const HomePage = () => {
+
+    const services = 
+        { id: 1, name: "Legal Consultation", description: "Get professional legal advice.", hourlyRate: 1000, rating: 4.5 };
+       
+        // Add more services as needed
+    
     return (
         <div>
             <Header />
             <HeroSection />
-            <ServiceCards />
+            <ServiceCards service={services}/>
             <Testimonials />
             <Footer />
         </div>
