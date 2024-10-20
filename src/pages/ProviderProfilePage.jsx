@@ -1,6 +1,6 @@
 // src/pages/ProviderProfilePage.jsx
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'; // Import useParams to get the provider ID from the URL
 import ProviderProfile from '../components/ProvideProfilePage/ProviderProfile';
 

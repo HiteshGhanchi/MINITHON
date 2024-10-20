@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -11,7 +11,7 @@ const ProviderCard = ({ provider }) => {
                 <img 
                     src={imagePath} 
                     alt={provider.name} 
-                    className="absolute inset-0 w-full h-full object-cover" 
+                    className="absolute inset-0 w-full h-full object-contain"  // Changed to object-contain
                     onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = "/photos/default.jpg"; // Fallback image
