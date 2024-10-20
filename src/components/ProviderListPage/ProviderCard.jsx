@@ -1,11 +1,25 @@
 // src/components/ProviderListPage/ProviderCard.jsx
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const ProviderCard = ({ provider }) => {
+    // Construct the image path
+    const imagePath = `/photos/${provider.id}/p.jpeg`;
+
     return (
         <div className="provider-card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 p-4 flex flex-col">
-            <img src={provider.photo} alt={provider.name} className="h-40 w-full object-cover" />
+            <img 
+                src={imagePath} 
+                alt={provider.name} 
+                className="h-40 w-full object-cover" 
+                onError={(e) => {
+                    // Fallback to a default image if the specific image fails to load
+                    e.target.onerror = null; // Prevent looping
+                    e.target.src = "/photos/default.jpg"; // Ensure this default image exists
+                }} 
+            />
             <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold mb-1">{provider.name}</h2>
                 <p className="text-gray-600">{provider.profession}</p>
@@ -20,10 +34,23 @@ const ProviderCard = ({ provider }) => {
                 </div>
             </div>
             <div className="p-4">
-                <button className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">View Profile</button>
+                <Link to={`/provider/${provider.id}`} className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">View Profile</Link>
             </div>
         </div>
     );
+};
+
+ProviderCard.propTypes = {
+    provider: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        profession: PropTypes.string.isRequired,
+        specialization: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        hourlyRate: PropTypes.number.isRequired,
+        ratings: PropTypes.number.isRequired,
+        reviews: PropTypes.number.isRequired,
+    }).isRequired,
 };
 
 export default ProviderCard;
