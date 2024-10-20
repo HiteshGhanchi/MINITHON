@@ -1,25 +1,23 @@
-// src/components/ProviderListPage/ProviderCard.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const ProviderCard = ({ provider }) => {
-    // Construct the image path
-    const imagePath = `/photos/${provider.id}/p.jpeg`;
+    const imagePath = provider.photo;
 
     return (
         <div className="provider-card bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 p-4 flex flex-col">
-            <img 
-                src={imagePath} 
-                alt={provider.name} 
-                className="h-40 w-full object-cover" 
-                onError={(e) => {
-                    // Fallback to a default image if the specific image fails to load
-                    e.target.onerror = null; // Prevent looping
-                    e.target.src = "/photos/default.jpg"; // Ensure this default image exists
-                }} 
-            />
+            <div className="h-40 w-full relative">
+                <img 
+                    src={imagePath} 
+                    alt={provider.name} 
+                    className="absolute inset-0 w-full h-full object-cover" 
+                    onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = "/photos/default.jpg"; // Fallback image
+                    }} 
+                />
+            </div>
             <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold mb-1">{provider.name}</h2>
                 <p className="text-gray-600">{provider.profession}</p>
@@ -29,7 +27,7 @@ const ProviderCard = ({ provider }) => {
                     <span className="font-bold text-lg">₹{provider.hourlyRate}/hr</span>
                     <div className="flex items-center">
                         <span className="text-yellow-500">{'★'.repeat(Math.round(provider.ratings))}</span>
-                        <span className="text-gray-500 ml-1">({provider.reviews} reviews)</span>
+                        <span className="text-gray-500 ml-1">({provider.reviews.length} reviews)</span>
                     </div>
                 </div>
             </div>
@@ -46,10 +44,14 @@ ProviderCard.propTypes = {
         name: PropTypes.string.isRequired,
         profession: PropTypes.string.isRequired,
         specialization: PropTypes.string.isRequired,
+        photo: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         hourlyRate: PropTypes.number.isRequired,
         ratings: PropTypes.number.isRequired,
-        reviews: PropTypes.number.isRequired,
+        reviews: PropTypes.arrayOf(PropTypes.shape({
+            user: PropTypes.string.isRequired,
+            review: PropTypes.string.isRequired,
+        })).isRequired,
     }).isRequired,
 };
 

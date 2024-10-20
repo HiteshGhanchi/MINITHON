@@ -1,15 +1,15 @@
-// src/pages/ContactUsPage.jsx
 
-// import React from 'react';
-// import Header from '../components/ContactUsPage/Header'; // Optional header
 import ContactForm from '../components/ContactUsPage/ContactForm';
-// import LocationMap from '../components/ContactUsPage/LocationMap';
+import Header from '../components/Header';
+// import Footer from '../components/Footer';
+
 
 const ContactUsPage = () => {
     return (
         <div>
-            {/* <Header /> */}
+            <Header />
             <ContactForm />
+            {/* <Footer /> */}
             {/* <LocationMap /> */}
         </div>
     );

@@ -1,8 +1,9 @@
 // src/pages/ProviderListPage.jsx
 
 import { useEffect, useState } from 'react';
-import SearchBar from '../components/ProviderListPage/SearchBar';
-import FilterOptions from '../components/ProviderListPage/FilterOptions';
+// import SearchBar from '../components/ProviderListPage/SearchBar';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ProviderList from '../components/ProviderListPage/ProviderList';
 
 const ProviderListPage = () => {
@@ -31,19 +32,21 @@ const ProviderListPage = () => {
         setFilteredProviders(results);
     }, [searchTerm, selectedSpecialization, providers]);
 
-    const handleSearch = (term) => {
-        setSearchTerm(term);
-    };
+    // const handleSearch = (term) => {
+    //     setSearchTerm(term);
+    // };
 
-    const handleSpecializationChange = (specialization) => {
-        setSelectedSpecialization(specialization);
-    };
+    // const handleSpecializationChange = (specialization) => {
+    //     setSelectedSpecialization(specialization);
+    // };
 
     return (
         <div>
             {/* <SearchBar onSearch={handleSearch} />
             <FilterOptions onFilterChange={handleSpecializationChange} /> */}
+            <Header />
             <ProviderList providers={filteredProviders} />
+            <Footer />
         </div>
     );
 };
